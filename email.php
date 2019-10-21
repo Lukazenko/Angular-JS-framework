@@ -24,11 +24,11 @@ $data = array(); 		// array to pass back data
 		$mail->Host = "smtp.gmail.com";
 		$mail->Port = 465; // or 587
 		$mail->IsHTML(true);
-		$mail->Username = "test.veikko@gmail.com"; //Email that you setup
-		$mail->Password = "Test12345Test"; // Password
+		$mail->Username = "email"; //Email that you setup
+		$mail->Password = "password"; // Password
 		$mail->Subject = "From " . $_POST['name'] . ", e-mail: " .$_POST['superheroAlias']. "";
 		$mail->Body = $_POST['content'];
-		$mail->AddAddress("test.veikko@gmail.com"); //Pass the e-mail that you setup
+		$mail->AddAddress("email"); //Pass the e-mail that you setup
 		 if(!$mail->Send())
 		    {
 		    		echo "Mailer Error: " . $mail->ErrorInfo;
