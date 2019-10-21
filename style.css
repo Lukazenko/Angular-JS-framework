@@ -1,0 +1,61 @@
+body {
+  
+    background-image: url("images/myback.jpg");
+    background-color: #000000;
+}
+
+
+
+
+
+.h1-style {
+  color: white; 
+  font-weight: bold; 
+  font-family: Comic Sans;
+}
+
+.h2-style {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  color: black; 
+  font-weight: bold; 
+  font-family: Comic Sans;
+}
+
+
+
+.done-true {
+    text-decoration: line-through;
+    color: #ddd;
+  }
+
+  .emphasis {
+    font-family: vast-shadow, sans-serif;
+    font-size: 4em;
+  }
+
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+  
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+
+  .active {
+    font-weight: bold;
+  }
+
+  
+  
+ 
+
+  .center {
+    margin: auto;
+    width: 70%;   
+    padding: 10px;
+  }
+

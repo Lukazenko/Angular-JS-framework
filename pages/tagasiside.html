@@ -1,0 +1,44 @@
+
+
+<div class="center">
+    
+   <div class="col-md-6 col-md-offset-3">
+      
+      <form ng-submit="processForm()">
+
+         <div id="name-group" class="form-group" ng-class="{ 'has-error' : errorName }">
+            <label><h2 class="h1-style">Nimi</h2> </label>
+            <input type="text" name="name" class="form-control" placeholder="Batman" ng-model="formData.name">
+            <span class="help-block" ng-show="errorName"></span>
+         </div>
+         <div id="superhero-group" class="form-group" ng-class="{ 'has-error' : errorSuperhero }">
+            <label><h2 class="h1-style">Email</h2></label>
+            <input type="email" name="superheroAlias" class="form-control" placeholder="brucewayne@batman.com" ng-model="formData.superheroAlias">
+            <span class="help-block" ng-show="errorSuperhero"></span>
+         </div>
+         <div id="content-group" class="form-group" ng-class="{ 'has-error' : errorContent }">
+            <label><h2 class="h1-style">Kiri</h2></label>
+            <textarea  rows="5" cols="50" class="form-control" placeholder="I am batman" ng-model="formData.content"></textarea>
+            <span class="help-block" ng-show="errorContent"></span>
+         </div>
+         <button type="submit" class="btn btn-primary btn-lg btn-block">
+         <span class="glyphicon glyphicon-flash"></span> Saada!
+         </button>
+      </form>
+      <p class="text-center btn-success">{{response}}</p>
+      
+      
+   </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+

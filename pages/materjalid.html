@@ -1,0 +1,24 @@
+
+<div class="center">
+
+<h1 class="h1-style">{{pealkiri}}</h1>
+
+        <div class="text-center">
+                <div ng-repeat="item in materjalid">
+                        <div class="jumbotron" style="margin-bottom: 30px;">
+                                <img width="100px" height="100px" ng-src="{{ item.pic }}">
+                                <h2 class="h2-style" style="padding-top: 30px;">{{item.info}}</h2>
+                                <hr style="border: solid 1px black;">
+                                <h4>{{item.name}}</h4>
+                                <hr style="border: solid 1px black;">
+                                <a  href="{{item.link}}"><button class="btn btn-primary">link</button></a> 
+                        </div>
+                </div>
+                
+        </div>
+</div>
+
+
+
+
+

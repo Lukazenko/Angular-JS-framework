@@ -1,0 +1,97 @@
+
+<div class="center">
+        <h1 class="h1-style">{{ pealkiri }}</h1>
+        
+        
+        <div class="jumbotron" style="line-height: 1.5;">
+                <p ng-show="alustaVisible">Vasta õieti küsimustele. On ainult üks katse!</p>
+
+                <p ng-show="kysimusedVisible" style="font-weight: bold;">Küsimused: {{kysimused}}/5</p>
+                <button ng-show="alustaVisible" class="btn btn-success" ng-click="alusta()">Alusta</button>
+
+
+                <div ng-show="isVisible1">
+                        <p>Kood:</p><br>
+                        <code style="color: black;">
+                        
+                                function f(input: boolean) { <br>
+                                        &ensp;&ensp;&ensp;&ensp;let a = 100; <br><br>
+                                
+                                        &ensp;&ensp;&ensp;&ensp;if (input) {<br>
+                                
+                                                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;let b = a + 1;<br>
+                                                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;return b;<br>
+                                                &ensp;&ensp;&ensp;&ensp;}<br>
+                                
+                                        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;return b;<br>
+                                
+                                }<br><br><br>
+                                
+                        </code>
+                                               
+                <p style="font-weight: bold;">Mis vastuse annab programm?</p>       
+                <label style="font-weight: normal;"><input style="vertical-align: middle; display: inline; margin: 0;" type="checkbox" class="radio" value="1" name="fooby[1][]" ng-model="a" />&ensp;A. Undefined</label><br>                                    
+                <label style="font-weight: normal;"><input style="vertical-align: middle; display: inline; margin: 0;" type="checkbox" class="radio" value="1" name="fooby[1][]" ng-model="b"/>&ensp;B. 101</label><br>           
+                <label style="font-weight: normal;"><input style="vertical-align: middle; display: inline; margin: 0;" type="checkbox" class="radio" value="1" name="fooby[1][]" ng-model="c"/>&ensp;C. Compilation error for a</label><br>
+                <label style="font-weight: normal;"><input style="vertical-align: middle; display: inline; margin: 0;" type="checkbox" class="radio" value="1" name="fooby[1][]" ng-model="d"/>&ensp;D. Compilation error for b</label><br>
+                        <br>
+                        <p style="color: red;">{{resultf}}</p><p style="color: green;">{{result}}</p>
+                <input ng-show="showVastus" type="button" class="btn btn-success" value="Vasta" ng-click="vastus()">
+                <input type="button" class="btn btn-primary" value="Järgmine" ng-click="ShowHide()">
+
+                </div>
+
+                <div ng-show="isVisible2">
+                        <p>In Angular, you can pass data from parent component to child component using...</p>
+                        <label style="font-weight: normal;"><input style="vertical-align: middle; display: inline; margin: 0;" type="checkbox" class="radio" value="1" name="fooby[1][]" ng-model="a" />&ensp;A. @Output()</label><br>                                    
+                        <label style="font-weight: normal;"><input style="vertical-align: middle; display: inline; margin: 0;" type="checkbox" class="radio" value="1" name="fooby[1][]" ng-model="b"/>&ensp;B. @Input()</label><br>           
+                        <label style="font-weight: normal;"><input style="vertical-align: middle; display: inline; margin: 0;" type="checkbox" class="radio" value="1" name="fooby[1][]" ng-model="c"/>&ensp;C. Input</label><br>
+                        <label style="font-weight: normal;"><input style="vertical-align: middle; display: inline; margin: 0;" type="checkbox" class="radio" value="1" name="fooby[1][]" ng-model="d"/>&ensp;D. Output</label><br>
+                                <br>
+                                <p style="color: red;">{{result2f}}</p><p style="color: green;">{{result2}}</p>
+                        <input ng-show="showVastus2" type="button" class="btn btn-success" value="Vasta" ng-click="vastus2()">
+                        <input type="button" class="btn btn-primary" value="Järgmine" ng-click="ShowHide2()">
+                </div>
+                <div ng-show="isVisible3">
+                                <p>You can create local HTML reference of HTML tag using variable which starts with character</p>
+                                <label style="font-weight: normal;"><input style="vertical-align: middle; display: inline; margin: 0;" type="checkbox" class="radio" value="1" name="fooby[1][]" ng-model="a" />&ensp;A. @</label><br>                                    
+                                <label style="font-weight: normal;"><input style="vertical-align: middle; display: inline; margin: 0;" type="checkbox" class="radio" value="1" name="fooby[1][]" ng-model="b"/>&ensp;B. #</label><br>           
+                                <label style="font-weight: normal;"><input style="vertical-align: middle; display: inline; margin: 0;" type="checkbox" class="radio" value="1" name="fooby[1][]" ng-model="c"/>&ensp;C. *</label><br>
+                                <label style="font-weight: normal;"><input style="vertical-align: middle; display: inline; margin: 0;" type="checkbox" class="radio" value="1" name="fooby[1][]" ng-model="d"/>&ensp;D. &</label><br>
+                                        <br>
+                                        <p style="color: red;">{{result3f}}</p><p style="color: green;">{{result3}}</p>
+                                <input ng-show="showVastus3" type="button" class="btn btn-success" value="Vasta" ng-click="vastus3()">
+                                <input type="button" class="btn btn-primary" value="Järgmine" ng-click="ShowHide3()">
+                </div>
+                <div ng-show="isVisible4">
+                                <p>A directive which modifies DOM hierarchy is called</p>
+                                <label style="font-weight: normal;"><input style="vertical-align: middle; display: inline; margin: 0;" type="checkbox" class="radio" value="1" name="fooby[1][]" ng-model="a" />&ensp;A. Structural directive</label><br>                                    
+                                <label style="font-weight: normal;"><input style="vertical-align: middle; display: inline; margin: 0;" type="checkbox" class="radio" value="1" name="fooby[1][]" ng-model="b"/>&ensp;B. Attribute directive</label><br>           
+                             
+                                        <br>
+                                        <p style="color: red;">{{result4f}}</p><p style="color: green;">{{result4}}</p>
+                                <input ng-show="showVastus4" type="button" class="btn btn-success" value="Vasta" ng-click="vastus4()">
+                                <input type="button" class="btn btn-primary" value="Järgmine" ng-click="ShowHide4()">
+                </div>
+                <div ng-show="isVisible5">
+                                <p>Select correct form control class name which is set to true via [(ngModel)] whenever value is modified</p>
+                                <label style="font-weight: normal;"><input style="vertical-align: middle; display: inline; margin: 0;" type="checkbox" class="radio" value="1" name="fooby[1][]" ng-model="a" />&ensp;A. ng-invalid</label><br>                                    
+                                <label style="font-weight: normal;"><input style="vertical-align: middle; display: inline; margin: 0;" type="checkbox" class="radio" value="1" name="fooby[1][]" ng-model="b"/>&ensp;B. ng-pending</label><br>           
+                                <label style="font-weight: normal;"><input style="vertical-align: middle; display: inline; margin: 0;" type="checkbox" class="radio" value="1" name="fooby[1][]" ng-model="c"/>&ensp;C. ng-pristine</label><br>
+                                <label style="font-weight: normal;"><input style="vertical-align: middle; display: inline; margin: 0;" type="checkbox" class="radio" value="1" name="fooby[1][]" ng-model="d"/>&ensp;D. ng-dirty</label><br>
+                                        <br>
+                                        <p style="color: red;">{{result5f}}</p><p style="color: green;">{{result5}}</p>
+                                <input ng-show="showVastus5" type="button" class="btn btn-success" value="Vasta" ng-click="vastus5()">
+                                <input type="button" class="btn btn-primary" value="Järgmine" ng-click="ShowHide5()">
+                </div>
+                <div ng-show="lastVisible">
+                        <p>Skoor: {{vastused}}/5</p>
+                        <input type="button" class="btn btn-primary" value="Alusta uuesti" ng-click="refresh()">
+
+                </div>
+                
+
+        </div>
+        
+
+</div>
